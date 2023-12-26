@@ -1,12 +1,20 @@
 import { useState } from 'react';
+
+// bootstrap components
 import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+
+// local file
 import logo from '../../assets/logo.webp'
+
+// react icons
+import { HiOutlineShoppingBag, HiOutlineHeart, HiOutlineUser } from "react-icons/hi";
+
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -22,7 +30,7 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="me-auto fs-5 fw-fw-bolder">
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#pricing">Collections</Nav.Link>
                             <Nav.Link href="#pricing">Blog</Nav.Link>
@@ -41,8 +49,15 @@ const Header = () => {
                             </NavDropdown> */}
                         </Nav>
                         <Nav>
-                            <Nav.Link onClick={handleShow} className="me-2">
-                                Cart
+                            <Nav.Link eventKey={2} href="#memes">
+                                <HiOutlineUser className='fs-3 text-dark'></HiOutlineUser>
+                            </Nav.Link>
+                            <Nav.Link eventKey={2} href="#memes">
+                                <HiOutlineHeart className='fs-3 text-dark'></HiOutlineHeart>
+                            </Nav.Link>
+                            <Nav.Link onClick={handleShow} className="me-2 d-flex align-items-center">
+                                <HiOutlineShoppingBag className='fs-3 text-dark'></HiOutlineShoppingBag>
+                                <p className='mb-0 ms-2 text-dark'>$100.00</p>
                             </Nav.Link>
                             <Offcanvas show={show} onHide={handleClose} placement='end'>
                                 <Offcanvas.Header closeButton>
@@ -53,9 +68,7 @@ const Header = () => {
                                     have chosen. Like, text, images, lists, etc.
                                 </Offcanvas.Body>
                             </Offcanvas>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

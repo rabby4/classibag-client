@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.bgColor {
+    background-color: #f26d8e;
+    color: #fff;
+}
+
+.nav-link {
+    margin: 0px 10px
+}
