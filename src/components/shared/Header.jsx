@@ -23,7 +23,7 @@ const Header = () => {
     const handleShow = () => setShow(true);
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+            <Navbar collapseOnSelect expand="lg" className="secondBgColor py-3">
                 <Container>
                     <Navbar.Brand href="#home" className='flex-grow-1'>
                         <Image src={logo}></Image>
