@@ -32,7 +32,6 @@ const Banner = () => {
                         </Carousel.Caption>
                     </div>
                 </Carousel.Item>
-
             </Carousel>
         </>
     );
