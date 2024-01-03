@@ -1,5 +1,8 @@
+/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap');
 
+
+/* global css */
 * {
     font-family: 'Frank Ruhl Libre', serif;
 }
@@ -21,6 +24,7 @@
     color: #f26d8e;
 }
 
+/* navbar css */
 .nav-link {
     margin: 0px 10px
 }
@@ -53,6 +57,7 @@ ul.mb-3.nav.nav-tabs.nav-justified {
     border-color: transparent;
 }
 
+/* products section css */
 .cardIcon {
     display: flex !important;
     justify-content: center;
@@ -71,26 +76,41 @@ ul.mb-3.nav.nav-tabs.nav-justified {
 }
 
 .visibleCardIcon:hover .hiddenCardIcon {
-
-
-    @keyframes cardIcons {
-        from {
-            margin-right: 0px;
-            visibility: visible;
-        }
-
-        to {
-            margin-left: 50px;
-            visibility: visible;
-        }
-    }
-
+    transform: translateX(-15px);
+    opacity: 1;
 }
 
-
 .hiddenCardIcon {
-    visibility: hidden;
-    animation-name: cardIcons;
-    animation-duration: .5s;
+    opacity: 0;
+    transition: .5s;
+}
 
+/* service section css */
+.allServiceCard {
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: top 20px left 15px;
+    transition: all .5s ease 0s;
+}
+
+.firstService {
+    background-image: url('./assets/service-1.png');
+}
+
+.secService {
+    background-image: url('./assets/service-2.png');
+}
+
+.thirdService {
+    background-image: url('./assets/service-4.png');
+}
+
+.fourthService {
+    background-image: url('./assets/service-3.png');
+}
+
+.allServiceCard:hover {
+    cursor: pointer;
+    background-position: top -75px left 15px;
 }

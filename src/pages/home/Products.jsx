@@ -32,7 +32,7 @@ const Products = () => {
                         <Col xs={12} md={8} lg={3}>
                             <Card className='border-0 visibleCardIcon'>
 
-                                <div className='d-flex flex-column position-absolute end-0 me-2 mt-2 hiddenCardIcon'>
+                                <div className='d-flex flex-column position-absolute end-0 mt-3 hiddenCardIcon'>
                                     <Button variant='light' className='cardIcon'>
                                         <FaRegHeart />
                                     </Button>
