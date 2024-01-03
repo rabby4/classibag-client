@@ -52,3 +52,45 @@ ul.mb-3.nav.nav-tabs.nav-justified {
     border: 0px !important;
     border-color: transparent;
 }
+
+.cardIcon {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #fff !important;
+    border: 0px !important;
+    border-radius: 100% !important;
+    width: 40px !important;
+    height: 40px !important;
+    box-shadow: -1px 1px 10px 0px #a4a4a41a;
+}
+
+.cardIcon:hover {
+    background-color: #f26d8e !important;
+    color: #fff !important;
+}
+
+.visibleCardIcon:hover .hiddenCardIcon {
+
+
+    @keyframes cardIcons {
+        from {
+            margin-right: 0px;
+            visibility: visible;
+        }
+
+        to {
+            margin-left: 50px;
+            visibility: visible;
+        }
+    }
+
+}
+
+
+.hiddenCardIcon {
+    visibility: hidden;
+    animation-name: cardIcons;
+    animation-duration: .5s;
+
+}
