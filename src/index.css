@@ -24,6 +24,10 @@
     color: #f26d8e;
 }
 
+.secTextColor {
+    color: #666666;
+}
+
 /* navbar css */
 .nav-link {
     margin: 0px 10px
@@ -113,4 +117,8 @@ ul.mb-3.nav.nav-tabs.nav-justified {
 .allServiceCard:hover {
     cursor: pointer;
     background-position: top -75px left 15px;
+}
+
+.testIcon {
+    color: #f26d8e;
 }

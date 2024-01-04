@@ -7,6 +7,7 @@ import Features2 from "./Features2";
 import MarqueeText from "./MarqueeText";
 import Products from "./Products";
 import Service from "./Service";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             {/* <MarqueeText></MarqueeText> */}
             <Features2></Features2>
             <DealOfTheDay></DealOfTheDay>
+            <Testimonial></Testimonial>
         </>
     );
 };
