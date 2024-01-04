@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import subBanner1 from '../../assets/sub-banner-1.webp'
 import subBanner2 from '../../assets/sub-banner-2.webp'
 import subBanner3 from '../../assets/sub-banner-3.webp'
+import FeatureCard from '../../components/shared/FeatureCard';
 
 const Features = () => {
     return (
@@ -13,7 +14,12 @@ const Features = () => {
             <div className='w-100 p-5'>
                 <Row className='w-100 mx-auto'>
                     <Col>
-                        <Card className="bg-dark text-black border-0">
+                        <FeatureCard
+                            bgImage={subBanner1}
+                            subTitle={'Flat 15% Discount'}
+                            title={'Designer Jet Set Handbag'}
+                            price={'30.00'} />
+                        {/* <Card className="bg-dark text-black border-0">
                             <Card.Img src={subBanner1} alt="Card image" className='rounded-0' />
                             <Card.ImgOverlay className='p-5'>
                                 <Card.Text className='mb-0'>Flat 15% Discount</Card.Text>
@@ -21,7 +27,7 @@ const Features = () => {
                                 <Card.Text>Stating At Only <span className='fs-4 textColor fw-medium'>$30.00</span></Card.Text>
                                 <button className='bgColor border-0 rounded-0 px-4 py-2 btnHover'>Shop Now</button>
                             </Card.ImgOverlay>
-                        </Card>
+                        </Card> */}
                     </Col>
                     <Col>
                         <Card className="bg-dark text-black border-0">
