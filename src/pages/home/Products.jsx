@@ -5,6 +5,7 @@ import '@smastrom/react-rating/style.css'
 import { FaRegHeart, FaRegEye } from "react-icons/fa";
 import { IoGitCompareOutline } from "react-icons/io5";
 import { FaCodeCompare } from "react-icons/fa6";
+import ProductCard from '../../components/shared/ProductCard';
 
 const includedShapesStyles = [ThinStar].map(
     (itemShapes) => ({ itemShapes, activeFillColor: '#F2B600', inactiveFillColor: '#CCCCCC' })
@@ -30,7 +31,8 @@ const Products = () => {
                 <Tab eventKey="featured" title="Featured" active>
                     <Row>
                         <Col xs={12} md={8} lg={3}>
-                            <Card className='border-0 visibleCardIcon'>
+                            <ProductCard></ProductCard>
+                            {/* <Card className='border-0 visibleCardIcon'>
 
                                 <div className='d-flex flex-column position-absolute end-0 mt-3 hiddenCardIcon'>
                                     <Button variant='light' className='cardIcon'>
@@ -77,9 +79,6 @@ const Products = () => {
                                         </Modal.Footer>
                                     </Modal>
                                 </div>
-
-
-
                                 <Card.Img variant="top" src="https://classibag-codezeel.myshopify.com/cdn/shop/files/01.jpg?v=1699246974&width=713" />
                                 <Card.Body className='ps-0 pe-0'>
                                     <Card.Text className='mb-0'>Gucci</Card.Text>
@@ -97,7 +96,16 @@ const Products = () => {
                                     </div>
                                     <Card.Text className='fs-5 fw-normal mt-2'> <span className='text-decoration-line-through'>$55.00</span> <span className=' textColor'>$49.00</span></Card.Text>
                                 </Card.Body>
-                            </Card>
+                            </Card> */}
+                        </Col>
+                        <Col xs={12} md={8} lg={3}>
+                            <ProductCard></ProductCard>
+                        </Col>
+                        <Col xs={12} md={8} lg={3}>
+                            <ProductCard></ProductCard>
+                        </Col>
+                        <Col xs={12} md={8} lg={3}>
+                            <ProductCard></ProductCard>
                         </Col>
                     </Row>
 
