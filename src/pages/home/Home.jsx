@@ -2,6 +2,7 @@ import Banner from "./Banner";
 import CollectionBanner from "./CollectionBanner";
 import Coupon from "./Coupon";
 import Features from "./Features";
+import Features2 from "./Features2";
 import MarqueeText from "./MarqueeText";
 import Products from "./Products";
 import Service from "./Service";
@@ -16,6 +17,7 @@ const Home = () => {
             <Service></Service>
             <CollectionBanner></CollectionBanner>
             {/* <MarqueeText></MarqueeText> */}
+            <Features2></Features2>
         </>
     );
 };

@@ -10,8 +10,7 @@ import FeatureCard from '../../components/shared/FeatureCard';
 const Features = () => {
     return (
         <>
-            {/* <Container> */}
-            <div className='w-100 p-5'>
+            <div className='w-100 py-4 px-2'>
                 <Row className='w-100 mx-auto'>
                     <Col>
                         <FeatureCard
@@ -19,41 +18,23 @@ const Features = () => {
                             subTitle={'Flat 15% Discount'}
                             title={'Designer Jet Set Handbag'}
                             price={'30.00'} />
-                        {/* <Card className="bg-dark text-black border-0">
-                            <Card.Img src={subBanner1} alt="Card image" className='rounded-0' />
-                            <Card.ImgOverlay className='p-5'>
-                                <Card.Text className='mb-0'>Flat 15% Discount</Card.Text>
-                                <Card.Title className='fs-1 fw-light'>Designer Jet Set <br /> Handbag</Card.Title>
-                                <Card.Text>Stating At Only <span className='fs-4 textColor fw-medium'>$30.00</span></Card.Text>
-                                <button className='bgColor border-0 rounded-0 px-4 py-2 btnHover'>Shop Now</button>
-                            </Card.ImgOverlay>
-                        </Card> */}
                     </Col>
                     <Col>
-                        <Card className="bg-dark text-black border-0">
-                            <Card.Img src={subBanner2} alt="Card image" className='rounded-0' />
-                            <Card.ImgOverlay className='p-5'>
-                                <Card.Text className='mb-0'>Flat 20% Discount</Card.Text>
-                                <Card.Title className='fs-1 fw-light'>Aristocrat Unisex <br /> Backpack</Card.Title>
-                                <Card.Text>Stating At Only <span className='fs-4 textColor fw-medium'>$25.00</span></Card.Text>
-                                <button className='bgColor border-0 rounded-0 px-4 py-2 btnHover'>Shop Now</button>
-                            </Card.ImgOverlay>
-                        </Card>
+                        <FeatureCard
+                            bgImage={subBanner2}
+                            subTitle={'Flat 20% Discount'}
+                            title={'Aristocrat Unisex Backpack'}
+                            price={'25.00'} />
                     </Col>
                     <Col>
-                        <Card className="bg-dark text-black border-0">
-                            <Card.Img src={subBanner3} alt="Card image" className='rounded-0' />
-                            <Card.ImgOverlay className='p-5'>
-                                <Card.Text className='mb-0'>Flat 30% Discount</Card.Text>
-                                <Card.Title className='fs-1 fw-light'>Selling Handbag <br /> For Her</Card.Title>
-                                <Card.Text>Stating At Only <span className='fs-4 textColor fw-medium'>$49.00</span></Card.Text>
-                                <button className='bgColor border-0 rounded-0 px-4 py-2 btnHover'>Shop Now</button>
-                            </Card.ImgOverlay>
-                        </Card>
+                        <FeatureCard
+                            bgImage={subBanner3}
+                            subTitle={'Flat 30% Discount'}
+                            title={'Selling Handbag For Her'}
+                            price={'49.00'} />
                     </Col>
                 </Row>
             </div>
-            {/* </Container> */}
         </>
     );
 };

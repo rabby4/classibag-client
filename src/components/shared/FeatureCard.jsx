@@ -13,7 +13,7 @@ const FeatureCard = ({ bgImage, subTitle, title, price }) => {
                             <Card.Text>Stating At Only <span className='fs-4 textColor fw-medium'>${price}</span></Card.Text>
                             <button className='bgColor border-0 rounded-0 px-4 py-2 btnHover'>Shop Now</button>
                         </Col>
-                        <Col lg='2'></Col>
+                        <Col lg='4'></Col>
                     </Row>
                 </Card.ImgOverlay>
             </Card>
