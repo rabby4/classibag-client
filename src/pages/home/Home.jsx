@@ -5,6 +5,7 @@ import Coupon from "./Coupon";
 import DealOfTheDay from "./DealOfTheDay";
 import Features from "./Features";
 import Features2 from "./Features2";
+import Gallery from "./Gallery";
 import ImageWithText from "./ImageWithText";
 import MarqueeText from "./MarqueeText";
 import Products from "./Products";
@@ -26,6 +27,7 @@ const Home = () => {
             <Testimonial></Testimonial>
             <ImageWithText></ImageWithText>
             <Blog></Blog>
+            <Gallery></Gallery>
         </>
     );
 };
