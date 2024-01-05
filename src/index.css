@@ -21,11 +21,15 @@
 }
 
 .textColor {
-    color: #f26d8e;
+    color: #f26d8e !important;
 }
 
 .secTextColor {
     color: #666666;
+}
+
+.mediumFont {
+    font-size: 18px;
 }
 
 /* navbar css */

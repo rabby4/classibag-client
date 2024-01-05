@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Blog from "./Blog";
 import CollectionBanner from "./CollectionBanner";
 import Coupon from "./Coupon";
 import DealOfTheDay from "./DealOfTheDay";
@@ -24,6 +25,7 @@ const Home = () => {
             <DealOfTheDay></DealOfTheDay>
             <Testimonial></Testimonial>
             <ImageWithText></ImageWithText>
+            <Blog></Blog>
         </>
     );
 };

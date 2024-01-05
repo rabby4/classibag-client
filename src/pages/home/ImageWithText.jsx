@@ -18,7 +18,6 @@ const ImageWithText = () => {
                         <button className='bgColor fs-5 border-0 rounded-0 px-5 py-2 mt-3 btnHover'>Shop Now</button>
                     </Col>
                 </Row>
-
             </Container>
         </div>
     );
