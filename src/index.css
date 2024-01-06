@@ -47,6 +47,10 @@
     margin: 0px 10px
 }
 
+.navLinks a {
+    text-decoration: none;
+}
+
 .btnHover:hover {
     background-color: black !important;
     transition: .5s;

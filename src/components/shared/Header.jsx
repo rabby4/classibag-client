@@ -14,6 +14,7 @@ import logo from '../../assets/logo.webp'
 
 // react icons
 import { HiOutlineShoppingBag, HiOutlineHeart, HiOutlineUser } from "react-icons/hi";
+import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -30,12 +31,12 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto fs-6 fw-medium">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#pricing">Collections</Nav.Link>
-                            <Nav.Link href="#pricing">Blog</Nav.Link>
-                            <Nav.Link href="#pricing">About</Nav.Link>
-                            <Nav.Link href="#pricing">Contact</Nav.Link>
+                        <Nav className="me-auto fs-6 fw-medium navLinks d-flex gap-5">
+                            <NavLink to='/' className='mediumFont secHoverText'>Home</NavLink>
+                            <NavLink to="/collections" className='mediumFont secHoverText'>Collections</NavLink>
+                            <NavLink to="/blog" className='mediumFont secHoverText'>Blog</NavLink>
+                            <NavLink to="/about" className='mediumFont secHoverText'>About</NavLink>
+                            <NavLink to="/contact" className='mediumFont secHoverText'>Contact</NavLink>
                             {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">
