@@ -1,8 +1,19 @@
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import banner from '../../assets/contact-banner.webp'
 import { FaPhoneAlt, FaHome, FaEnvelope, FaInfo } from 'react-icons/fa';
+import GoogleMapReact from 'google-map-react';
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const Contact = () => {
+    const defaultProps = {
+        center: {
+            lat: 10.99835602,
+            lng: 77.01502627
+        },
+        zoom: 11
+    };
+
     return (
         <>
             <div style={{ backgroundImage: `url(${banner})`, padding: '80px 0px', textAlign: 'center' }}>
@@ -81,6 +92,21 @@ const Contact = () => {
                             </div>
                         </div>
                     </Col>
+                </Row>
+                <Row className='my-5'>
+                    <div style={{ height: '70vh', width: '100%', padding: '0px' }}>
+                        <GoogleMapReact
+                            bootstrapURLKeys={{ key: "" }}
+                            defaultCenter={defaultProps.center}
+                            defaultZoom={defaultProps.zoom}
+                        >
+                            <AnyReactComponent
+                                lat={59.955413}
+                                lng={30.337844}
+                                text="My Marker"
+                            />
+                        </GoogleMapReact>
+                    </div>
                 </Row>
             </Container>
         </>
