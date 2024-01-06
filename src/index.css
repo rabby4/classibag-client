@@ -5,6 +5,7 @@
 /* global css */
 * {
     font-family: 'Frank Ruhl Libre', serif;
+    box-sizing: border-box;
 }
 
 .bgColor {
@@ -47,7 +48,7 @@
 }
 
 .btnHover:hover {
-    background-color: black;
+    background-color: black !important;
     transition: .5s;
 }
 
