@@ -8,8 +8,8 @@
 }
 
 .bgColor {
-    background-color: #f26d8e;
-    color: #fff;
+    background-color: #f26d8e !important;
+    color: #fff !important;
 }
 
 .bgColorTransparent {
@@ -26,6 +26,15 @@
 
 .secTextColor {
     color: #666666;
+}
+
+.secHoverText {
+    color: #666666;
+}
+
+.secHoverText:hover {
+    color: #f26d8e !important;
+    cursor: pointer;
 }
 
 .mediumFont {
@@ -125,4 +134,20 @@ ul.mb-3.nav.nav-tabs.nav-justified {
 
 .testIcon {
     color: #f26d8e;
+}
+
+/* footer css */
+.footerLink a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.footerLink a:hover {
+    color: #f26d8e;
+    cursor: pointer;
+}
+
+.subscribeInput:focus {
+    border: none !important;
+    outline: none !important;
 }
