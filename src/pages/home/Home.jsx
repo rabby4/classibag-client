@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import Blog from "./Blog";
+import Category from "./Category";
 import CollectionBanner from "./CollectionBanner";
 import Coupon from "./Coupon";
 import DealOfTheDay from "./DealOfTheDay";
@@ -17,6 +18,7 @@ const Home = () => {
         <>
             <Banner></Banner>
             <Features></Features>
+            <Category></Category>
             <Coupon></Coupon>
             <Products></Products>
             <Service></Service>
